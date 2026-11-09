@@ -1,0 +1,13 @@
+{
+  "name": "Hola — الإسبانية في الحياة اليومية",
+  "short_name": "Hola Español",
+  "description": "تعلم الإسبانية القشتالية مع ٢٠٠٠ عبارة ورسوم توضيحية دون اتصال.",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f5f1",
+  "theme_color": "#f6f5f1",
+  "icons": []
+}

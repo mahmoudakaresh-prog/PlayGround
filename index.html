@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f6f5f1">
+  <meta name="description" content="تعلم الإسبانية القشتالية مع ٢٠٠٠ عبارة ومشاهد تعليمية تعمل دون اتصال.">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23f1b942'/%3E%3Ctext x='50' y='69' font-size='57' text-anchor='middle'%3E%E2%98%80%3C/text%3E%3C/svg%3E">
+  <title>Hola — الإسبانية في الحياة اليومية</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="Hola الرئيسية"><span class="brand-mark">h<span>.</span></span><span class="brand-name">hola<span class="brand-dot">.</span><small>إسبانية من الحياة</small></span></a>
+      <div class="offline-card"><span class="offline-icon">⌁</span><div><b>جاهز دون إنترنت</b><small>كل الدروس محفوظة على جهازك</small></div><i class="status-dot"></i></div>
+      <div class="nav-label">مساحة التعلّم</div>
+      <button class="nav-item active" data-view="learn"><span>▣</span> تعلّم اليوم <kbd>⌘1</kbd></button>
+      <button class="nav-item" data-view="library"><span>▤</span> مكتبة الجمل <small class="nav-count">٢٬٠٠٠</small></button>
+      <button class="nav-item" data-view="saved"><span>♡</span> المحفوظات</button>
+      <div class="sidebar-divider"></div>
+      <div class="nav-label">رحلتك</div>
+      <div class="journey"><div class="journey-top"><span>مستواك الحالي</span><span id="levelName">مبتدئ A0</span></div><div class="journey-track"><i id="journeyProgress"></i></div><small><span id="doneCount">٠</span> من ٢٬٠٠٠ جملة</small></div>
+      <div class="side-bottom"><div class="streak-icon">✳</div><div><b id="streakLabel">يوم جديد، بداية جميلة!</b><small>خطوة صغيرة كل يوم تصنع الفرق</small></div></div>
+      <div class="sidebar-foot">صُمّم بحب · يعمل بالكامل دون اتصال</div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar"><button class="mobile-menu icon-button" id="menuToggle" aria-label="القائمة">☰</button><div class="breadcrumb">مساحة التعلّم <span>/</span> <b id="crumbTitle">تعلّم اليوم</b></div><div class="top-actions"><div class="streak-pill">✳ <span id="topStreak">٠</span> أيام متتالية</div><button class="avatar" title="ملفك الشخصي">م</button></div></header>
+      <div class="content-wrap">
+        <section class="view active" id="learnView">
+          <div class="welcome-row"><div><div class="eyebrow"><span class="eyebrow-line"></span> TU ESPAÑOL, A TU RITMO</div><h1>كل يوم، <em>عبارة جديدة.</em></h1><p>إسبانية حقيقية للحياة اليومية — من أول «هولا» حتى محادثات B1.</p></div><div class="date-chip"><span>☼</span><div><b id="todayLabel">رحلتك تبدأ هنا</b><small>درس قصير · تقدّم ثابت</small></div></div></div>
+          <div class="level-tabs" id="levelTabs"><button class="level-tab selected" data-level="0"><span>A0</span> البداية</button><button class="level-tab" data-level="1"><span>A1</span> مبتدئ</button><button class="level-tab" data-level="2"><span>A2</span> أساسي</button><button class="level-tab" data-level="3"><span>B1</span> متوسط</button><div class="tabs-spacer"></div><span class="level-note">وفق مستويات CEFR</span></div>
+          <div class="lesson-layout">
+            <article class="lesson-card">
+              <div class="lesson-meta"><div class="lesson-tags"><span class="tag tag-level" id="lessonLevel">A0 · البداية</span><span class="tag tag-topic" id="lessonTopic">التعارف</span></div><div class="lesson-counter"><span id="lessonNumber">الجملة ٠١</span><button class="save-button" id="saveButton" aria-label="حفظ الجملة">♡</button></div></div>
+              <div class="scene" id="scene" aria-label="مشهد تعليمي متحرك"><div class="scene-sun"></div><div class="scene-cloud cloud-one"></div><div class="scene-cloud cloud-two"></div><div class="scene-back-building"></div><div class="scene-building"><div class="window-grid"><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="scene-awning"></div><div class="scene-counter"></div><div class="scene-plant plant-one">✿</div><div class="scene-plant plant-two">✿</div><div class="scene-person person-one"><i class="person-head"></i><i class="person-body"></i></div><div class="scene-person person-two"><i class="person-head"></i><i class="person-body"></i></div><div class="scene-caption"><span class="caption-kicker">UNA ESCENA COTIDIANA</span><b id="sceneCaption">Un encuentro en Madrid</b></div><div class="scene-play"><span>▶</span></div><div class="scene-footer"><span><i class="live-dot"></i> رسوم متحركة محلية</span><span class="scene-time">00:08</span></div><div class="scene-mute">◉ <span>رسوم توضيحية · بلا اتصال</span></div></div>
+              <div class="sentence-block"><div class="translation-label"><span>استمع، واقرأ، ثم جرّب</span><button class="slow-button" id="speakButton" title="استمع للنطق الإسباني">🔊 <span>استمع</span></button></div><div class="spanish-line" id="spanishSentence" lang="es">¡Hola! ¿Qué tal?</div><div class="arabic-line" id="arabicSentence">مرحبًا! كيف حالك؟</div><div class="sentence-hint"><span>✦</span> <span id="sentenceHint">تحية شائعة في إسبانيا — «¿Qué tal?» للسؤال عن الحال.</span></div></div>
+              <div class="lesson-footer"><button class="next-button" id="nextButton">الجملة التالية <span>←</span></button><button class="prev-button" id="prevButton"><span>→</span> السابقة</button><span class="keyboard-tip">استخدم <kbd>←</kbd> و<kbd>→</kbd> للتنقّل</span></div>
+            </article>
+            <aside class="practice-column"><div class="practice-card"><div class="practice-heading"><div class="practice-icon">◉</div><div><span class="mini-label">TU TURNO</span><h2>حان دورك!</h2></div></div><p>قل العبارة بصوت عالٍ. سجّل صوتك، ثم استمع لنفسك.</p><div class="record-orb-wrap"><button id="recordButton" class="record-orb" aria-label="ابدأ التسجيل"><span class="record-mic">🎙</span><span class="record-ring ring-a"></span><span class="record-ring ring-b"></span></button></div><div class="record-status" id="recordStatus">اضغط للتسجيل</div><div class="record-timer" id="recordTimer">٠٠:٠٠</div><div class="record-controls"><button id="playRecording" disabled>▶ استمع لتسجيلك</button><button id="discardRecording" disabled aria-label="حذف التسجيل">⌫</button></div><div class="practice-tip"><span>💡</span><span>لا تخف من الخطأ — التكرار هو سر الطلاقة.</span></div></div><div class="progress-card"><div class="progress-top"><span>تقدّمك اليوم</span><span id="dailyPercent">٠٪</span></div><div class="progress-bar"><i id="dailyProgress"></i></div><div class="progress-bottom"><span><b id="todayDone">٠</b> من ٥ جمل</span><button id="dailyGoalButton">هدف يومي ✦</button></div></div><div class="offline-note"><span>◈</span><div><b>مصمّم للعمل أوفلاين</b><small>الجمل والرسوم التوضيحية محلية.<br>ليست لقطات فيديو حقيقية. التسجيل يبقى على جهازك.</small></div></div></aside>
+          </div>
+          <div class="below-note"><span>✳</span> كل جملة معها ترجمتها ورسوم متحركة توضيحية محلية (وليست لقطات حقيقية) — تعلّم في أي مكان، حتى بلا إنترنت.</div>
+        </section>
+        <section class="view" id="libraryView"><div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> TU BIBLIOTECA</div><h1>مكتبة <em>الجمل.</em></h1><p>٢٠٠٠ عبارة إسبانية مرتّبة حسب مستواك وموضوعك.</p></div></div><div class="library-tools"><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="ابحث بالإسبانية أو العربية..." autocomplete="off"><kbd>/</kbd></label><div class="filter-pills" id="libraryFilters"><button class="filter-pill active" data-filter="all">الكل</button><button class="filter-pill" data-filter="0">A0</button><button class="filter-pill" data-filter="1">A1</button><button class="filter-pill" data-filter="2">A2</button><button class="filter-pill" data-filter="3">B1</button></div></div><div class="library-summary"><span id="resultCount">٢٠٠٠ جملة</span><span>كل المحتوى متاح دون اتصال ◈</span></div><div class="phrase-list" id="phraseList"></div><div class="load-more-wrap"><button id="loadMore" class="load-more">عرض المزيد من الجمل ↓</button></div></section>
+        <section class="view" id="savedView"><div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-line"></span> TUS FAVORITAS</div><h1>جملك <em>المحفوظة.</em></h1><p>العبارات التي تريد الرجوع إليها مرة أخرى.</p></div></div><div class="phrase-list" id="savedList"></div><div class="empty-state" id="emptySaved"><span>♡</span><h2>لم تحفظ أي جملة بعد</h2><p>اضغط على القلب بجانب أي عبارة لتجدها هنا.</p><button class="next-button" data-go="learnView">ابدأ التعلّم <span>←</span></button></div></section>
+      </div>
+      <footer class="app-footer"><span>hola<span class="brand-dot">.</span> · إسبانية الحياة اليومية</span><span>صُنع للتعلّم، صُمّم للأوفلاين ◈</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
